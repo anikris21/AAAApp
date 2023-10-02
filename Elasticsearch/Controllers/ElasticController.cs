@@ -32,16 +32,20 @@ namespace Elasticsearch.Controllers
         public async Task<ActionResult<User>> Details(string id)
         {
             var response = await _elasticClient.SearchAsync<User>(
-                s => s.Query(q => q.Term(t => t.Name, id) || 
+                s => s
+                //.Index("users")
+                .Query(q => q.Term(t => t.Name, id) || 
                 q.Match(m => m.Field(f => f.Name).Query(id))));
             return response?.Documents?.FirstOrDefault();
         }
 
-        // GET: ElasticController/Create
+        // GET: ElasticController/Create Task<ActionResult<string>>
         [HttpPost]
-        public ActionResult<string> Create(User user)
+        public async Task<ActionResult<string>> Create(User user)
         {
-            return "test";
+            var response = await _elasticClient.IndexAsync<User>(user, i => i.Index("users"));
+            return response.Id;
+            
         }
 
 
