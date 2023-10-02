@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthApp", "AuthApp\AuthApp.csproj", "{887C19C2-2AD2-45EC-94BF-0DFD5B8B84BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthApp", "AuthApp\AuthApp.csproj", "{887C19C2-2AD2-45EC-94BF-0DFD5B8B84BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodingApp", "EncodingApp\EncodingApp.csproj", "{EA76A984-9980-4B13-820C-1F2E1A4008A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncodingApp", "EncodingApp\EncodingApp.csproj", "{EA76A984-9980-4B13-820C-1F2E1A4008A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elasticsearch", "Elasticsearch\Elasticsearch.csproj", "{79DA0AD7-0D00-446E-A3F3-4B2B51BD2C37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EA76A984-9980-4B13-820C-1F2E1A4008A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA76A984-9980-4B13-820C-1F2E1A4008A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA76A984-9980-4B13-820C-1F2E1A4008A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DA0AD7-0D00-446E-A3F3-4B2B51BD2C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DA0AD7-0D00-446E-A3F3-4B2B51BD2C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DA0AD7-0D00-446E-A3F3-4B2B51BD2C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DA0AD7-0D00-446E-A3F3-4B2B51BD2C37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
